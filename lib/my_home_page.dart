@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
-
- 
-
   final String title;
 
   @override
@@ -14,7 +11,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 100;
-
   void _incrementCounter() {
     setState(() {
       
@@ -27,23 +23,20 @@ class _MyHomePageState extends State<MyHomePage> {
    
     return Scaffold(
       appBar: AppBar(
-      
         title: Text(widget.title),
       ),
       body: Center(
-      
         child: Column(
-        
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'hoge',
+              'okok',
             ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-             SizedBox(
+            SizedBox(
               height: 300,
               width: 300,
               child: GridView.count(
@@ -53,15 +46,17 @@ class _MyHomePageState extends State<MyHomePage> {
                     const Padding(
                       padding: EdgeInsets.all(8.0),
                       child: ColoredBox(
-                        color: Colors.amber,
+                        color: Colors.red,
                       ),
                     ),
                 ],
               ),
             ),
+           
           ],
         ),
       ),
+      
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
