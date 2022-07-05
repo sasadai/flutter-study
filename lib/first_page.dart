@@ -5,7 +5,7 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     return Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -21,9 +21,15 @@ class FirstPage extends StatelessWidget {
                 //     builder: (BuildContext context) => NextPage(),
                 //   ),
                 // );
-                 Navigator.pushNamed(context, "/next");
+                Navigator.pushNamed(context, "/next");
               },
               icon: const Icon(Icons.arrow_forward),
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, "/twice");
+                },
+                child: const Text("計算ページ")
             )
           ],
         ),

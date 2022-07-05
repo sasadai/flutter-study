@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study/first_page.dart';
 import 'package:flutter_study/next_page.dart';
+import 'package:flutter_study/twice_button.dart';
 
 
 void main() {
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const FirstPage(),
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/next': (context) => NextPage(),
+        '/twice': (context) => const TwiceButton(),
       },
     );
   }
